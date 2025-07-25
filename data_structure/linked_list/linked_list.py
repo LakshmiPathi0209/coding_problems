@@ -1,3 +1,6 @@
+from os import times_result
+from timeit import timeit
+
 from data_structure.Nodes import LinkedListNode
 
 
@@ -76,12 +79,12 @@ class LinkedList:
         pointer = self.head
         cur = None
         last_node = None
-        while index >= 0 and pointer.next_node:
+        while index > 0 and pointer.next_node:
             last_node = pointer
             cur = pointer.next_node
             pointer = pointer.next_node
             index -= 1
-        if index != -1:
+        if index != 0:
             raise IndexError("index out of range")
         if last_node and cur:
             last_node.next_node = cur.next_node
