@@ -16,4 +16,4 @@ class Solution:
 
 if __name__ == "__main__":
     obj = Solution()
-    print(obj.longestCommonPrefix(["flower","flow","flight"]))
+    print(obj.longestCommonPrefix(["flower","flow","floight"]))
